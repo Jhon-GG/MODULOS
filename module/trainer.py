@@ -21,7 +21,8 @@ def save():
         data = json.dumps(trainer, indent=4)
         f.write(data)
         f.close()
-    return "Sucessfully Trainer "
+    return "Sucessfully trainer"
+
 def edit():
     bandera=True
     while (bandera):
@@ -62,6 +63,7 @@ ________________________
         elif(opc == 3):
             bandera = False
     return "Edit to trainer"
+
 def search():
     system("clear")
     print("""
@@ -80,8 +82,8 @@ Genero: {val.get('Genero')}
 ________________________
         """)
     return "The trainer is available"
-def delete():
 
+def delete():
     bandera = True
     while(bandera):
         system("clear")
@@ -114,7 +116,8 @@ ________________________
             bandera = False
         elif(opc == 3):
             bandera = False
-    return "Trainer deleted"
+    return "trainer deleted"
+
 def menu():
     bandera=True
     while (bandera):
